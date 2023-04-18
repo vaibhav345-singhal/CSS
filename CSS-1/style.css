@@ -1,0 +1,71 @@
+/* order will matter in css which css will come in last will be added  */
+/* 
+inline css
+internal css
+external css
+
+best way is to use external css */
+
+
+/* Tag selector :- we use html tags as selectors */
+
+P {
+    border: 1px solid goldenrod;
+    color: bisque;
+    background-color: black;
+}
+
+/* Class selector :- we use class name as selector by giving a class name */
+/* .class-name{
+    property:value
+} */
+
+.para {
+    border: 1px dotted black;
+    color: aliceblue;
+    background-color: black;
+}
+
+.btn {
+    border: 1px solid green;
+    border-radius: 10px;
+    padding: 10px 22px;
+    width: 10%;
+}
+
+
+/* Id Selector :- we use id name as a selector and it cant be duplicate */
+/* #id-name{
+    property:value
+} */
+#para-id {
+    border: 1px dotted black;
+    color: blanchedalmond;
+    background-color: black;
+}
+
+#btn-1 {
+    background-color: black;
+    color: bisque;
+}
+
+#btn-2 {
+    background-color: brown;
+    color: aliceblue;
+}
+
+/* universal selector :- selects all the element in the html page */
+
+* {
+    text-align: center;
+}
+
+/* Grouping selector :- used for grouping different selector with same style */
+/* can add all types of selector  */
+p,
+h1 {
+    font-weight: 300;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: aqua;
+    background-color: black;
+}
