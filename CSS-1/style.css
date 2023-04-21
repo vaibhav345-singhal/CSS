@@ -69,3 +69,100 @@ h1 {
     color: aqua;
     background-color: black;
 }
+
+/* combinator selector */
+/* 1. General Sibling Selector */
+
+
+/* target all the p tags that are siblings of elements which have class-name as `head` */
+
+.head~p {
+    color: lightpink;
+}
+
+
+/* 2. Adjacent sibling selector */
+/* targets the sibling p tag that come immediately after h1 tag */
+
+h1+p {
+    color: lightslategray;
+}
+
+
+
+/* 3. Child Selector */
+/* targets all the direct children */
+
+div>p {
+    color: red;
+}
+
+
+/* 4. descendent selector
+targets all the descendants of an element */
+
+div p {
+    color: lightgoldenrodyellow;
+}
+
+
+/* selector[attribute_name="attribute_value"] */
+
+input[type="text"],
+input[type="email"] {
+    border: 1px solid blue;
+    border-radius: 8px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+a[target="_blank"] {
+    background-color: yellow;
+}
+
+/* used to style specified parts of an element */
+/* syntax: 
+selector::pseudo-element{} */
+
+#ps-demo::first-letter {
+    color: aliceblue;
+}
+
+#ps-demo::first-line {
+    color: greenyellow;
+}
+
+#ps-demo::after {
+    content: "This is using after";
+    color: lightsalmon;
+}
+
+#ps-demo::before {
+    content: "This is using before psuedo element";
+    color: brown
+}
+
+/* psuedo class Selector */
+/* Syntax => any_selector:psuedo-class */
+
+td {
+    width: 50px;
+    height: 50px;
+    background-color: aquamarine;
+}
+
+td:nth-child(2n):hover {
+    width: 100px;
+    height: 100px;
+    background-color: lightcoral
+}
+
+td:nth-child(2n-1):hover {
+    width: 100px;
+    height: 100px;
+    background-color: lightsalmon
+}
+
+input:focus {
+    background-color: lightskyblue;
+    color: black;
+}
