@@ -1,0 +1,64 @@
+.parent {
+    height: 200vh;
+    padding: 30px;
+    background-color: lightcoral;
+    color: black;
+    position: relative;
+}
+
+
+/*Static  by default position is static and you cant use offset values in this position like top bottom left right */
+
+/*Relative: element is positioned relative to its original position.same as static position.just that here we can use offset values.element stays in normal documeny flow */
+
+/* Absolute : element is positioned relative to its parent.
+If parent is not present than it will position acc to main document.
+element is removed from normal document flow no space is created for that element*/
+
+/* Fixed:element is positioned relative to viewport
+element doesn't move and stays in the same position even after scrolling.
+element is removed from the normal flow */
+
+/* sticky: element is positioned acc to normal document flow 
+when element touches top than it becomes fixed */
+
+.child {
+    padding: 40px;
+}
+
+.child-one {
+    background-color: lightcyan;
+    position: relative;
+    top: 300px;
+    left: 20px
+}
+
+.child-two {
+    background-color: lightgoldenrodyellow;
+    position: absolute;
+    top: 50px;
+    left: 60px;
+}
+
+.child-three {
+    background-color: lightgreen;
+
+}
+
+/* nav {
+    background-color: lightyellow;
+    padding: 15px;
+    margin: 10px;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+} */
+
+nav {
+    background-color: lightyellow;
+    padding: 15px;
+    margin: 10px;
+    position: sticky;
+    top: 0px;
+    width: 100%;
+}
